@@ -1,0 +1,1 @@
+alert("Hey there from a diff file")

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+--secondary-shadow: #a17a69;
+
+}
+
+.text-wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.div-board {
+    background-color: #fff;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10px 10px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* This evenly spaces your items, you can adjust as needed */
+    max-width: 500px;
+    margin: auto;
+}
+
+.alert-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
