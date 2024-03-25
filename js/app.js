@@ -5,6 +5,8 @@ console.log('hello world')
 //this isnt neeeded if you call your script below the button though!
 document.addEventListener('DOMContentLoaded', function() {
 
+    prompt("hi there")
+
     const buttonAlert = (document.getElementById("buttonAlert"))
     
     
