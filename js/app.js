@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     prompt("hi there")
 
-    const buttonAlert = (document.getElementById("buttonAlert"))
+    const buttonAlert = document.getElementById("buttonAlert")
     
     
     buttonAlert.addEventListener("click", function (event) {
