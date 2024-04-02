@@ -78,3 +78,29 @@ let str3 = "I'm a new \nline";
 let str4 = "I'm containing a backslash: \\!";
 console.log(str3)
 console.log(str4)
+
+
+//Numbers!!!
+/* the number data type can be used to represent integers, decimals, exponentials
+octal, hexadecimal, and binary numbers
+*/
+
+let intNr = 7;
+let decNr = 1.5;
+let expNr = 1.4e15;
+let octNr = 0o10; // decimal version would be 8
+let hexNr = 0x3E8; // decimal version would be 1000
+let binNr = 0b101; // decimal version would be 5
+
+let intNr2 = 3434;
+let intNr3 = -111;
+
+let decNr2 = 45.78; 
+
+let binNr2 = 0b100; //decimal version would be 4
+
+
+//sometimes in special cases  you will need an even bigger number
+
+
+//BigInt
