@@ -21,7 +21,8 @@ const PI = 3.13159;
 //this will result in typeerror
 
 //Variables
-//string
+//strings
+
 // you can use single quotes or double quotes or back ticks to delcare a string
 //single and double quotes can be used like so
 let singleString = 'hi there!';
@@ -104,3 +105,54 @@ let binNr2 = 0b100; //decimal version would be 4
 
 
 //BigInt
+//BigInt datatypes can be recognized by the postfix n:
+let bigNr = 90071992547409920n;
+
+
+//lets try to do some calculations with our previously made integer Number, intNr, and
+//BigInt, bigNr:
+// let result = bigNr + intNr;
+// console.log(result)
+
+//this will result in an error: Cannot mix BigInt and other types.
+//you can only operate BigInt with other Bigints
+
+
+//Boolean
+/* Boolean data type can only hold two values true and fale. there is nothing 
+in between.*/
+
+let bool1 = false;
+let bool2 = true;
+
+//in the preceding example you can see the options we have for the boolean data type
+//it is used in situations where you want to store a true or false value
+//which can indicate on/off yes/no for example when an element is deleted:
+
+let isDeleted = false;
+
+//or whether light is on/off
+
+let lightIsOn = true;
+
+
+
+//Symbol
+
+//Symbol is a newer data type introduced in ES6. Symbol can be used when it is important
+//that variables are not equal even tho their value and type are the same.
+//compare the following string declarations to the symbol declarations all of equal value
+
+let str5 = "javascript is fun!";
+let str6 = "javascript is fun!";
+console.log("These two strings are the same:", str5 === str6);
+
+let sym1 = Symbol("Javascript is fun!");
+let sym2 = Symbol("Javascript is fun!");
+console.log("These two symbols are the same:", sym1 === sym2);
+
+/* in the first half, javascript concludes the strings are the same. They have the same
+value and same type. However in the second part each symbol is unique
+Therefore, although they contain the same string, they are not the same and output false when
+compared.The symbol datatypes can be very handy as properties of objects which we will see later
+*/
