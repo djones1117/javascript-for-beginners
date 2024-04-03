@@ -156,3 +156,50 @@ value and same type. However in the second part each symbol is unique
 Therefore, although they contain the same string, they are not the same and output false when
 compared.The symbol datatypes can be very handy as properties of objects which we will see later
 */
+
+
+//Undefined
+//Javascript is a special language that has a special data type for a variable that has
+//not been assigned a value. This data type is undefined:
+
+let unassigned;
+console.log(unassigned)
+
+//we can also purposely assign an undefined value.It is important to know that it is
+//possible, but it is even more important to know that manually assigning undefined is
+//a bad practice!!!!
+
+let terribleThingToDo = undefined;
+
+//this can be done but it is recommended to not do this. This is for a number of reasons
+//for example checking whether two variables are the same. if one variable is undefined
+//and your own variable is manually set to undefined they will be considered equal
+//this is an issue because if youre checking for equality you would want to know whether
+//two values are actually equal not just that they are both undefined
+//this way someones pet and their last name might be considered equal whereas theyre actually
+//both just empty values
+
+
+//Null
+/* In the last example we saw an issue that can be solved with a final primitive type,
+null. Null is a special value for saying that a variable is empty or has am unkown value.
+This is case sensitive. You should use lowercase for null*/
+
+let empty = null;
+
+
+//to solve the issue we encountered with setting a variable as undefined, note that if you
+//set it to null you wont have the same problem. This is one of the reasons it is better
+//to assign null to a variable when you want to say it is empty and unknown at first:
+
+let lastName;
+console.log("same undefined:", lastName === terribleThingToDo);
+
+let betterOption = null;
+console.log("Same null:", lastName === betterOption);
+
+
+//this shows that an automatically undefined variable, lastName and a deliberately undefined
+// variable terriblethingtodo are considered equal which is problematic. on the other hand
+//lastname and betteroption which was explicitly declared with a value of null are not equal
+
