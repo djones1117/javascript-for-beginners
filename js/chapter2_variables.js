@@ -313,3 +313,26 @@ console.log(strToBool1, typeof strToBool1);
 let no1 = 2;
 let no2 = "2";
 console.log(no1 + Number(no2));
+
+
+
+//operators 
+/*after seeing quite a few different data types and some ways to convert them it is time
+for the next major building block: operators. They come in handy whenever we want to 
+work with the variables modify them perform calculations on them and compare them
+They are called operators because we use them to operate on our variables */
+
+
+//Arithmetic operators 
+//Arithmetic operators can be used to perform operations with numbers. Most of these operations
+//will feel natural to you because they are the basic mathematics you will have learned
+//early in your life already
+
+//Addition
+//Addition in js is very easy, we have seen it already. We use the + for this operation
+
+let addNum = 12;
+let addNum2 = 14;
+resultToAddNum = addNum + addNum2;
+console.log(resultToAddNum);
+
