@@ -48,10 +48,10 @@ let language = "JavaScript";
 let message = `Let's learn ${language}`;
 console.log(message);
 //as you can see the language variable gets replaced with its value: Javascript
-let player = "Gavi";
-let team = "Barcelona";
-let champions = `${player} plays well for ${team} in the champions league!`;
-console.log(champions);
+// let player = "Gavi";
+// let team = "Barcelona";
+// let champions = `${player} plays well for ${team} in the champions league!`;
+// console.log(champions);
 
 
 //Escape Characters
@@ -148,6 +148,7 @@ let str6 = "javascript is fun!";
 console.log("These two strings are the same:", str5 === str6);
 
 let sym1 = Symbol("Javascript is fun!");
+console.log(sym1);
 let sym2 = Symbol("Javascript is fun!");
 console.log("These two symbols are the same:", sym1 === sym2);
 
@@ -203,3 +204,112 @@ console.log("Same null:", lastName === betterOption);
 // variable terriblethingtodo are considered equal which is problematic. on the other hand
 //lastname and betteroption which was explicitly declared with a value of null are not equal
 
+//working out the type of variable
+
+let testvariable = 1;
+variableTypeTest1 = typeof testvariable;
+variableTypeTest2 = typeof(testvariable);
+console.log(variableTypeTest1);
+console.log(variableTypeTest2);
+
+
+let str7 = "hello";
+let nr6 = 7;
+let bigNr2 = 12345678901234n;
+let bool = true;
+let sym = Symbol("unique");
+let undef;
+let unknown = null;
+
+console.log("str7", typeof str, str7)
+console.log("nr6", typeof nr6, nr6)
+console.log("bigNr2", typeof bigNr2, bigNr2)
+console.log("bool", typeof bool, bool)
+console.log("sym", typeof(sym), sym)
+console.log("undef", typeof undef, undef)
+console.log("unknown", typeof unknown, unknown)
+
+//converting data types
+
+let nr7 = 2;
+let nr8 = "2";
+let result1 = (nr7 * nr8);
+console.log(result1, typeof result1);
+//javascript will try to first convert this string in nr8 to a number. If that can be done
+//it can execute without any problems in this case it will log 4
+//but this is dangerous because guess what the code below outputs?
+
+let nr10 = 2;
+let nr11 = "2";
+let result = (nr10 + nr11);
+console.log(result, typeof result);
+//this will log 22! the plus sign can be used to concatenate strings. Therefore, instead
+//of converting a string to a number, it is converting a number to a string in this ex
+//and clubbing the two strings together "2" and "2" make "22". Luckily we do not have
+//to rely on javascripts behavior when converting data types. There are built in functions
+//we can use to convert the data type of our variable
+
+//there are 3 conversion methods
+
+
+let noToStr = 6;
+noToStr = String(noToStr);
+console.log(noToStr, typeof noToStr);
+
+
+let strToNum = "12";
+strToNum = Number(strToNum);
+console.log(strToNum, typeof strToNum)
+
+//everything will be true except null,undefined,0(number), an empty string, and NaN.
+let strToBool = "hello";
+strToBool = Boolean(strToBool);
+console.log(strToBool, typeof strToBool);
+
+
+
+/* These might seem pretty straightforward but not all of the options are equally
+obvious. These, for example, are not what you think: */
+let nullToNr = null;
+nullToNr = Number(nullToNr);
+console.log( "null", nullToNr, typeof nullToNr);
+
+let strToNr = "";
+strToNr = Number(strToNr);
+console.log( "empty string", strToNr, typeof strToNr);
+
+
+//as you can see an empty string and null will both result in the number 0. This is a choice
+//that the makers of javascript made, which you will have to know -it can come in handy
+//at times when you want to convert a string to 0 when it is empty or null.
+
+
+
+//Next enter the following snippet:
+
+let strToNr2 = "hello";
+strToNr2 = Number(strToNr2);
+console.log(strToNr2, typeof strToNr2);
+
+
+//here we can see that anything that cant be interpreted as a number by simply 
+//removing the quotes will evaluate as Nan (not a number).
+
+
+
+let strToBool2 = "false";
+strToBool2 = Boolean(strToBool2);
+console.log(strToBool2, typeof strToBool2);
+
+let strToBool1 = "";
+strToBool1 = Boolean(strToBool1);
+console.log(strToBool1, typeof strToBool1);
+
+//this output shows that any string will return true when converted to a boolean,
+//even the string false. Only an empty string, null, undefined will lead to a bool value of false
+
+
+
+let no1 = 2;
+let no2 = "2";
+console.log(no1 + Number(no2));
