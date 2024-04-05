@@ -333,6 +333,215 @@ They are called operators because we use them to operate on our variables */
 
 let addNum = 12;
 let addNum2 = 14;
-resultToAddNum = addNum + addNum2;
-console.log(resultToAddNum);
+let resultToAddNum = addNum + addNum2;
+console.log(resultToAddNum)
 
+let str1 = "Hello ";
+let str8 = "addition";
+let result2 = str1 + str8;
+console.log(result2)
+
+console.log(resultToAddNum, result2)
+
+//as you can see adding numbers and strings lead to diff results. if we add two different strings
+//it will concatenate them into a single string
+
+
+//excercise 2.2
+//create a variable for your name,your age, and one for whether you can code javascript
+
+let myAge = 26;
+let myName = 'Dylan';
+let coder = true;
+const message3 = "Hello, my name is " + myName + ", I am " + myAge + " years old and I can code JavaScript: " + coder + "."; 
+console.log(message3)
+
+
+//Subtraction 
+/* Subtraction works as we would expect it as well. We use - for this operation. What do you think
+gets stored in the variable in this second example?
+*/
+
+
+let subtractNum = 20;
+let subtractNum1 = 4;
+let str9 = "hi";
+let subtractNum2 = 3;
+let result3 = subtractNum - subtractNum1;
+let result4 = str9 - subtractNum2;
+console.log(result3, result4)
+
+//the first result is 16 and the second result is more interesting. it gives nan, not an error but just simply the conclusion
+//that a word and a number subtracted is not a number. thanks for not crashing javascript
+
+
+//Multiplication 
+
+//we can multiply two numeric values with the * character. Unlike some other languages,
+//we cannot successfully multiply a number and a string in javascript.
+//The result of multiplying a numeric and a non mumeric value is nan.
+
+let mul = 15;
+let mul1 = 10;
+let mul3 = "Hi";
+let mul4 = 3;
+let result5 = mul * mul1;
+let result6 = mul3 * mul4;
+console.log(result5, result6);
+
+
+//Division
+//another straightforward operator is division. We can divide two numbers with the / 
+//character 
+
+let div1 = 30;
+let div2 = 5;
+let divResult = div1 / div2;
+console.log(divResult)
+
+
+//Exponentiation 
+/* Exponentiation means raising a certain base number to the power of the exponent, for example
+x to the power of y. it means that we will multiply x by itself y number of times. Here
+is an example of how to do this in javascript - we use ** for this operator */
+
+
+let exponent1 = 2;
+let exponent2 = 3;
+let exponentResult = exponent1 ** exponent2;
+console.log(exponentResult);
+
+//the result of this operation is 2 to the power of 3 which is 8. We're going to avoid
+//getting into a mathematics lesson here, but we can also find the root of a number by
+//using fractional exponents: for example the square root of a value is the same as
+//rasing it to the power of 0.5
+console.log(64 ** 0.5)
+
+console.log(8 ** 2)
+console.log(9 ** 2)
+
+//Modulus
+/* This is the one that requires a little explanation. modulus is the operation in which
+you determine how much is left after dividing a number by another number in its entirety.
+The ammount of the times the number can fit in the other numbder does not matter here.
+The outcome will be the remainder or what is left over. The character we use for this operation
+is the % character. Here are some examples*/
+
+let mod1 = 10;
+let mod2 = 3;
+let modResult = mod1 % mod2;
+console.log(`${mod1} % ${mod2} = ${modResult}`);
+
+let nr3 = 8;
+let nr4 = 2;
+let result7 = nr3 % nr4;
+console.log(`${nr3} % ${nr4} = ${result7}`);
+
+let nr5 = 15;
+let nr9 = 4;
+let result8 = nr5 % nr9;
+console.log(`${nr5} % ${nr9} = ${result8}`);
+
+
+
+//the first one is 10 % 3 where 3 fits 3 times into 10 and then 1 is left over.The second
+//one is 8 % 2. this results in 0 because 2 can fit 4 times into 8 without having anything left
+//The last one is 15 % 4 where 4 fits 3 times into 15 leaving 3 left.
+
+
+/* This is something that would happen in your head automatically if i asked you to add 125
+minutes to the current time. You will probably do two things: integer division to determine how many hole hours fit into 125 minutes and then 125 modulo 60 to conclude
+that youll have to add 5 more minutes to the current time. Say our current time is 9:59
+you will probably start by adding 2 hours and getting to 11:59 and then add 5 minutes
+and then you will perform another modulus operation with 59 and 5 adding 1 more hour to the total
+and having 4 minutes left 12:04 */
+
+
+
+
+
+//Unary operators: increment and decrement
+/* The last two operators of our arithmetic operator section are probably new to you, 
+if you are new to programming. These are increment and decrement operators. A term we use here is operand. Operands are 
+subject to the operator. So if we say x + y, x and y are operands.*/
+
+//We only need one operand for these operators and therefore we also call them
+//unary operators. If we see x++, we can read this as x = x + 1. The same is true for the decrement
+//operators: x-- can be read as x = x - 1:
+
+
+let op1 = 4;
+op1++;
+console.log(op1);
+
+
+let op2 = 4;
+op2--;
+console.log(op2);
+
+
+
+
+
+/* Prefix and postfix operators
+We can have the increment operator after the operand x++ in which case we call
+this the postfix unary operator. We can also have it before ++x which is the prefix unary operator
+This does something different though- the next few lines might be complicated so dont
+worry if you need  to read it a few times and have a good look at the examples here:
+*/
+
+
+let nr12 = 2;
+console.log(nr12++);
+console.log(nr12);
+
+//The postfix gets executed after sending the variable through, and then acter that the operation gets
+//executed. In the previous example nr12 gets incremented by 1 after logging. so the first logging
+//statement is still logging the old value because it has not been updated yet
+//it has been updated for the second log statement
+
+
+
+//The prefix gets executed before sending the variable through and often this is the one 
+//you will need. have a look below
+
+
+let nr13 = 2;
+console.log(++nr13);
+
+//alright if you can figure out what the next code snippet logs to the console, you should
+//really have a good handle on it:
+
+
+let nr14 = 4;
+let nr15 = 5;
+let nr16 = 2;
+console.log(nr14++ + ++nr15 * nr16++);
+
+
+//It ouputs 16. It will do the multiplication first, according to the basic mathematical order
+//of operations. For multiplying, it uses 6 (prefix, so 5 is incremented before multiplying)
+// and 2 (postfix, so 2 is only incremented after execution, meaning it wont affect our current calculation)
+//This comes down to 12 and then nr14 is a postfix operator so this one will execute after
+//the addition. Therefore, it will add 12 + 4 and become 16.
+
+
+//Combining the operators
+//These operators can be combined, and it works just as it does in math. They get executed in a certain
+//order, and not necessarily from left to right. this is due to a phenomenon called operator precedence.
+
+//There is one more thing to take in account here, and that is grouping . You can group using ( and ). the operations between the parenthesis have the highest
+//precedence. after that the order of operations takes place based on the type of operation (highest precedence first)
+//and if they are equal precedence they take place from left to right
+
+
+let A = prompt("Input a value");
+let B = prompt("Input a second value");
+A = Number(A);
+B = Number(B);
+squareResult = ((A * A) + (B * B))**0.5;
+console.log(squareResult)
+
+
+
+//assignment operators

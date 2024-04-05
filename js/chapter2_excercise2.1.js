@@ -9,3 +9,10 @@ console.log("str2", str2, typeof str2)
 console.log("vall", vall, typeof vall)
 console.log("val2", val2, typeof val2)
 console.log("myNum", myNum, typeof myNum)
+
+
+myAge = 26;
+myName = 'Dylan';
+coder = true;
+message = "Hello my name is " + myName + ", I am " + myAge + " years old and I can code Javascript: " + coder + ".";
+console.log(message)
