@@ -441,7 +441,7 @@ let nr5 = 15;
 let nr9 = 4;
 let result8 = nr5 % nr9;
 console.log(`${nr5} % ${nr9} = ${result8}`);
-
+console.log(nr5 + " % " + nr9 + " = " + result8, "this is the result in double quotes");
 
 
 //the first one is 10 % 3 where 3 fits 3 times into 10 and then 1 is left over.The second
@@ -539,9 +539,76 @@ let A = prompt("Input a value");
 let B = prompt("Input a second value");
 A = Number(A);
 B = Number(B);
-squareResult = ((A * A) + (B * B))**0.5;
+squareResult = ((A * A) + (B * B)) ** 0.5;
 console.log(squareResult)
+
+let parenthesisVar = 5;
+let parenthesisVar2 = 10;
+let addnum10 = 5;
+let addnum11 = 5;
+let sub1 = 5;
+let sub2 = 5;
+let mulX = 5;
+let divX = 5;
+let expo = 2;
+const resultValue = ((parenthesisVar + parenthesisVar2) ** expo) + addnum10 - sub1 * mulX 
+const resultValue2 = (parenthesisVar * parenthesisVar2) ** expo + addnum11 - sub2 / divX
+console.log(resultValue)
+console.log(resultValue2)
+
+//as you can see this is an example of grouping and order of operations 
+//first result adds what is in the parenthesis first which is 15. then the expo's next multiplying 15 times itself which is 225.
+//finally the multipication happens next as following the order of operations so 225 + addnum10 - 25 as sub1 X mulX = 25
+//and the result will be 205. 225 + 5 - 25 = 205.
+//the second result is similar. parenthesis first 5 x 10 = 50. 50 ** 2 = 2500, following order of operations division happens next 5/5 = 1 
+//so now it reads 2500 + 5 - 1 which results in 2504
+
 
 
 
 //assignment operators
+/* We have seen one assignment operator already when we were assigning values to variables.
+The character for the basic assignment operation is = . There are a few others available. Every binary arithmetic operator has a corresponding assignment
+operator to write a shorter piece of code. For example, x += 5 means x = x + 5 and x **= 3 means x = x ** 3 (x to the power of 3) */
+
+
+
+let x = 2;
+x += 2;
+console.log(x)
+
+//after this assignment operation the value of x becomes 4 because x += 2 is the same as x = x + 2
+
+x -= 2;
+console.log(x)
+
+
+//after this assignment the value of x becomes 2 because x = x -2 
+
+
+x *= 6;
+
+
+//so x becomes 12 because x = x * 6 
+
+
+
+x /= 3;
+
+
+//this equates to x = x / 3 so it returns 4. we will use exponentiation
+
+
+x **= 2;
+
+
+//this equates to x = x ** 2; so in turn the result is 16 because the old value was 4 and x = 4 ** 2 so 4 * 4 = 16
+
+
+x %= 3;
+
+
+//after this assignment the result logs 1 because x = x % 3; 3 can fit into 16 5 times and there is 1 leftover so output is 1
+
+
+
