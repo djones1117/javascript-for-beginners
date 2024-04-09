@@ -612,3 +612,37 @@ x %= 3;
 
 
 
+let a = 5;
+let b = 5;
+let c = 5;
+
+a += b;
+
+a /= c;
+
+c %= b;
+
+console.log(a, b, c)
+//output should be (2, 5, 0)
+
+// let a = 4;
+// let b = 11;
+// let c = 21;
+// a = a + b;
+// a = a / c;
+// c = c % b;
+// console.log(a, b, c);
+
+
+
+//comparison operators
+//comparison operators are different from other operators that we have seen so far. The
+//outcome of the comparison operator is always a boolean. True or false
+
+//Equal
+//There are a few equality operators that determine whether two values are equal. They come
+//in two flavors: equal value only, or equal value and data type. The first one returns 
+//true when the values are equal, even though the type is different, while the second one
+//returns true only when the value and types are the same.
+
+
