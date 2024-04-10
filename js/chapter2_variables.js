@@ -646,3 +646,57 @@ console.log(a, b, c)
 //returns true only when the value and types are the same.
 
 
+let equal = 5;
+let equal1 = "5";
+console.log(equal == equal1);
+
+/* The double equals operator, two equal signs means that it will only check for equal
+value and not for data type. Both have the value of 5 so it will log true to the console
+This type of equality is sometimes called loose equality*/
+
+/* The triple operator written as three equal signs means that it will evaluate 
+both the value and data type to determine whether both sides are equal or not.
+Therefore they both need to be euqal in order for this statement to be true, but they are not and therefore
+the following statement output is false */
+
+
+console.log(equal === equal1);
+//this is false
+//but we can make it true by converting the data type to a number instead of a string
+equal1 = Number(equal1);
+
+console.log(equal === equal1)
+
+
+
+//Not equal
+/* Not equal is very similar to equal except it does the opposite it returns true when 
+two variables are not equal and false when they are equal. We use the exclamation mark for not equal
+*/
+
+let notEqual = 5;
+let notEqual1 = "5";
+console.log(notEqual != notEqual1);
+
+//this will log false to the console. If you are wondering what is going on here, take
+//a look again at the double and triple equals operators because it is the same here.
+//however when there is only one equal sign in a not equal operator it is comparing loosely
+//for non equality. Therefore it concludes that they are equal and therefore not equal should result in false.
+//The one with two equal signs is checking for strict non equality:
+
+console.log(notEqual !== notEqual1)
+
+
+//this will conclue that since both variables have different data type they are not the same
+//and will log true to the console
+
+notEqual1 = Number(notEqual1)
+console.log(notEqual !== notEqual1)
+
+//this will return false because both variables have the same value and same data type
+//so not equal will conlucde they are equal so it will log false
+
+
+//Greather than and smaller than 
+
+//
