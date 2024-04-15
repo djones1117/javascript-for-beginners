@@ -221,7 +221,7 @@ let sym = Symbol("unique");
 let undef;
 let unknown = null;
 
-console.log("str7", typeof str, str7)
+console.log("str7", typeof str7, str7)
 console.log("nr6", typeof nr6, nr6)
 console.log("bigNr2", typeof bigNr2, bigNr2)
 console.log("bool", typeof bool, bool)
@@ -535,12 +535,12 @@ console.log(nr14++ + ++nr15 * nr16++);
 //and if they are equal precedence they take place from left to right
 
 
-let A = prompt("Input a value");
-let B = prompt("Input a second value");
-A = Number(A);
-B = Number(B);
-squareResult = ((A * A) + (B * B)) ** 0.5;
-console.log(squareResult)
+// let A = prompt("Input a value");
+// let B = prompt("Input a second value");
+// A = Number(A);
+// B = Number(B);
+// squareResult = ((A * A) + (B * B)) ** 0.5;
+// console.log(squareResult)
 
 let parenthesisVar = 5;
 let parenthesisVar2 = 10;
@@ -697,6 +697,120 @@ console.log(notEqual !== notEqual1)
 //so not equal will conlucde they are equal so it will log false
 
 
-//Greather than and smaller than 
+//Greater than and smaller than 
 
-//
+/* The greater than operator returns true if the land-hand side is greater than the right hand side of the operation. We use the > character for this. We
+also have a greater than or equal to operator >=, which returns true if the land hand side is greater than or equal to the right hand side.*/
+
+let gr8 = 5;
+let gr9 = 6;
+console.log(gr9 > gr8);
+
+
+//this will log true because gr9 is greater than gr8
+
+
+console.log(gr8 > gr9);
+
+//this will log false because gr8 is not greater than gr9
+
+
+console.log(gr9 > gr9);
+
+
+//this will log false because gr9 is not bigger than gr9
+
+
+console.log(gr9 >= gr9);
+
+//this will log true because gr9 is equal to itself. its checking whether gr9 is greather than or equal to!
+
+
+//it might not surprise you that we also have a smaller than (<) and smaller than or equal to operators (<=) lets have a look at the smaller 
+//operator as it is very similar to the previous ones.
+
+
+console.log(gr9 < gr8);
+
+//this will log false because gr9 is not smaller than gr8
+
+console.log(gr8 < gr9);
+
+//this will log true since gr8 is smaller than gr9
+
+console.log(gr9 < gr9);
+
+//this will log false because gr9 is not smaller than gr9
+
+console.log(gr9 <= gr9);
+
+//this last one checks whether gr9 is smaller than or equal to gr9. it is equal to it so it will log true
+
+
+
+
+//logical operators
+//whenever you want to check two conditions in one or you need to negate a condition, the logical operators come in handy. You can use
+//and, or, and not.
+
+
+//And
+
+
+/* The first one we will have a look at is and. If you want to check whether x is greater than y and y is greater than z you would need to be able to combine two
+expressions. This can be done with the && operator. It will only return true if both expressions are true */
+
+
+
+let example = 1;
+let example1 = 2;
+let example3 = 3;
+
+console.log(example < example1 && example3 > example1);
+
+//this will log true because both expressions are true. example is smaller than example 1 and example 3 is greater than example1
+
+//this next example will log false
+
+
+console.log(example > example1 && example3 > example);
+
+//this will log false because both expressions are not true. example is not greater than example1. example3 is greater than example but both expressions
+//need to be true to return true
+
+
+//Or
+
+/* If you want to get true if either one of the expressions is true, you use or. The operator for this is ||. These pipes are used to see if
+either one of these two is true, in which case the whole expression evaluates to true. Lets have a look at the or operator in action:*/
+
+
+console.log(example > example1 || example3 > example);
+
+
+//this will result in true, whereas it was false above with &&. This is because only one of the sides needs to be true in order for this 
+//whole expression to evaluate to true. this is because example3 is greater than example
+
+//when both sides are false it will log false, which is the case in the next example
+
+
+console.log(example > example1 || example3 < example);
+
+
+//Not
+/* In some cases you will have to negate a boolean. This will make it the opposite value. It can be done with the exclamation mark, which reads as not:
+*/
+
+let isUser = false;
+console.log(!isUser);
+
+//this will log true since it will simply flip the value of the boolean. You can also negate an expression that valuates to a boolean, but you would
+//have to make sure that the expression gets evaluated first by grouping it. 
+
+
+let sumNum = 1;
+let sumNum2 = 2;
+console.log(!(sumNum < sumNum2));
+
+//sumNum is smaller than sumNum2 so its true but it gets negated by the exclamation mark and logs false to the console.
+
