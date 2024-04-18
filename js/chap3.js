@@ -175,3 +175,100 @@ console.log(lastElement)
 /* So this might seem pretty straightforward. Remember the non-existent index position we called in the previous section? lets see what happens in this example*/
 
 
+ numbers = [12, 24, 36];
+ numbers[5] = 48;
+ console.log(numbers.length);
+ 
+ //the length of the array is only counting integer numbers starting from 0 up to the highest filled index. if there are elements in the middle of the
+ //sequence that do not have a value, they will still get counted. In this case, length becomes 6. if we log the array we can see why 
+
+ console.log("numbers", numbers);
+
+ /* Because we added an element, 48 at an index 5, it also created 2 new elements at index positions 3 and 4 containing empty values. For now, lets have a look 
+ at array methods and find out the right way to add to an array */
+
+
+
+ //1 create an array to use as your shopping list with 3 items
+ //2 check your list length in the console
+ //3 update bread to bananas 
+ //4 output your entire list to the console
+
+ const list = ["Milk", "Bread", "Apples"];
+ console.log(list.length);
+ list[1] = "Bananas";
+ console.log(list);
+
+
+ //Array methods
+
+ /* We have just seen the built in length property. We also have seen a few built-in methods. Methods are functions on a certain object. Instead of holding a value
+ like properties,they perform actions. We will cover functions in depth in chapter 6 for now all you need to know is that you can call methods and functions
+ and when you do some code that is specified inside that function gets executed
+ 
+ 
+ 
+ We just accidentally saw we could add elements using new indices. This is not the proper way to do it as it is easy to make mistakes and overwite a certain value
+ or skip a certain index. The right way is to do this with a special method. Similarly, we can also delete elements and sort the elements in the array*/
+
+
+ //Adding and replacing elements
+
+ //we can add elements with the push method
+ favoriteFruits = ["grapefruit", "orange", "lemon"];
+ favoriteFruits.push("tangerine");
+ //the value gets added to the end of the array. the push method returns the new length of the array four in this case. you can store this length in a variable like this
+
+ let lengthOfFavoriteFruits = favoriteFruits.push("lime");
+ console.log(lengthOfFavoriteFruits)
+//the value 5 gets stored in lengthoffavoritefruits variable. If we log our array, favoritefruits 
+
+console.log(favoriteFruits);
+
+//easy right? But what if you need to add elements at a certain index? you can use the splice method. This one is slightly more difficult
+
+let arrOfShapes = ["circle", "triangle", "rectangle", "pentagon"];
+arrOfShapes.splice(2, 0, "square", "trapezoid");
+console.log(arrOfShapes);
+
+/* First lets point out the different layouts of this output. This might depend on the interpreter you are using but at some point, it will decide it is too long
+for a single line and apply an automatic format to the array to make it more readable. It doesn't change the value of the array; it is just a different representation of the same
+values were they to be on a single line */
+
+/* as you can see the square and trapezoid get inserted on index 2. the rest of the array is shifting to the right. The splice method takes multiple 
+parameters the first param 2 in our case, is the index value of the array on which we want to start inserting. The second param 0 in our case is the 
+number of elements that we want to delete starting at our previously defined started index. the params after these first two, square and trapezoid in our case 
+are whatever should be inserting at the start index */
+
+
+//so had we said this instead
+
+// arrOfShapes.splice(2, 2, "square", "trapezoid")
+// console.log(arrOfShapes)
+
+
+//it would delete the rectange and pentagon and add in square and trapezoid in there place
+
+
+//if you were to increase the second param to a number higher than our array, it would not affect the result as javascript would simply stop as soon
+//as it runs out of values to delete. Try the following code
+
+
+arrOfShapes.splice(2, 12, "square", "trapezoid")
+console.log(arrOfShapes)
+
+//it would have the same output as the splice method in the example above this last one
+
+
+/* You can also add another array to your array. This can be done with the concat() method. This way you can create a new array that consists of a 
+concatenation of both arrays. The elements of the first array will be first, and the elements of the argument of concat() will be concatenated to the end
+*/
+
+
+let arr6 = [1, 2, 3];
+let arr7 = [4, 5, 6];
+let arr8 = arr6.concat(arr7);
+console.log(arr8);
+
+
+
