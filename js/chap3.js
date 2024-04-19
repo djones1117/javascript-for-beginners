@@ -271,4 +271,60 @@ let arr8 = arr6.concat(arr7);
 console.log(arr8);
 
 
+//The concat method can do more. We can use it to add values as well. We can 
+//add a single value or we can comma seperate multiple values
 
+let arr9 = arr8.concat(7, 8, 9);
+console.log(arr9);
+
+
+//Deleting elements
+
+/* There are several ways in which you can delete elements from an array. Removing the last element is done with pop():
+*/
+
+arr9.pop();
+console.log(arr9);
+
+
+//Deleting the first element can be done with shift(); This causes all other indices to be reduced by one:
+ 
+arr9.shift();
+console.log(arr9);
+
+
+//we can use unshift to add one or more elements to the beginning of array. This causes all other indices to be increased by one: returns the new length of the array after
+//elements have been added
+
+let newLength = arr9.unshift(1);
+console.log(newLength);
+console.log(arr9);
+
+/* Remember splice? This is a very special method because we can also use it to delete values. We specify the index from where we want to start deleting 
+and then the number of elements we want to delete: */
+
+
+arr9.splice(5, 2);
+console.log(arr9);
+
+/* as you can see 2 elements starting from the 5th positional index have been deleted. The values 6 and 7 are gone. If you do not wish to change any of the 
+later indices you can also use the operator delete. This is not a method, but you can use it to change the value of a certain position of the array to undefined */
+
+
+delete arr9[0];
+console.log(arr9);
+
+
+/* This is useful when you are relying on index or length for some reason. For example, if you are keeping user input and you want to determine the number
+of user inputs based on an array that the user is pushing to, deleting would decrease the number of inputs whereas that might not be what you want*/
+
+
+
+//Finding elements
+/* If you want to check whether a value is present in an array, you can use the find() method. What will go in the find() method is somewhat different
+It is actually a function. This function will be executed on every element in the array until it finds a match, and if it does not, then it will return undefined
+*/
+
+
+
+/* */
