@@ -681,7 +681,7 @@ let company = {
 };
 
 
-//as you can see, our company has an addressobject with values. This can go very many levels deep if necessary.
+//as you can see, our company has an address object with values. This can go very many levels deep if necessary.
 
 //To access or modify one of the properties of the address here, we can use two approaches.
 
@@ -791,4 +791,108 @@ let addresses = [{
                   };
 
 
-/* */
+/* To access elements of increasingly nested objects an arrays we simply extend the same logic you have seen in the previous sections. To access the street name
+of healthy candys first address we can use the following code: 
+*/
+
+
+let streetName1 = company3.address[0].street;
+
+console.log(streetName1);
+
+
+
+//as you can see we can stack object and array element requests indefinintely.
+
+/* We will not make it any more complicated than this for now. Whenever you need a list of something you will be using an array. Whenever you want to 
+represent something with properties that have descriptive names, it is better to use an object. just remember that object properties can be of any type
+*/
+
+//practice
+
+const people = {
+    friends : []
+};
+
+const friend1 = {
+        first: "dakota",
+        last: "smith",
+        id : 1
+};
+const friend2 = {
+        first: "jacob",
+        last: "davis",
+        idValue : 2
+};
+const friend3 = {
+        first: "ryan",
+        last: "smith",
+        idValue : 3
+};
+
+
+people.friends.push(friend1, friend2, friend3);
+
+console.log(people)
+
+
+//chapter projects
+
+const theList = ['Laurence', 'Svekis', true, 35, null, undefined, {test: 'one', score: 35}, ['one', 'two']];
+theList.pop();
+theList.shift();
+theList.unshift('FIRST');
+theList.splice(4, 3, 'hello world');
+theList.splice(2, 2, 'MIDDLE');
+theList.push("LAST")
+console.log(theList);
+
+
+
+const inventory = [];
+
+const item1 = {
+        name: "iphone",
+        model: 12,
+        cost: 800,
+        quantity: 1
+};
+const item2 = {
+        name: "tree",
+        model: "sequoia",
+        cost: 50,
+        quantity: 3
+};
+const item3 = {
+        name: "pizza",
+        model: "Dominos",
+        cost: 8,
+        quantity: 2
+};
+
+
+inventory.push(item1, item2, item3);
+console.log(inventory);
+console.log(inventory[2].quantity); //get item3 quantity
+console.log(inventory[0].name) //get item1 name value
+console.log(inventory[1].model) // get model of item2
+
+
+/* Summary 
+  so in this chapter, we have seen arrays and objects. Arrays are a list of values. These could be values of the same type, but also values of different types
+  . Every element of the array gets an index. The index of the first element is 0. We can access the elements of the array using this index. We can also use the index
+  to change and delete the element
+  
+  
+  We then saw that it is also possible to have arrays containing other arrays, these are multidimensional arrays. To access the elements of a multi-dimensional arrau
+  you would need to use as many indices as you have nested arrays
+  
+  
+  
+  Then we convered objects and learned that arrays are a special kind of object. Objects contain properties and methods. We looked at the properties
+  of objects and saw that these properties are given a name and can be accessed and modified using this name
+  
+  
+  We ended this module by looking at how arrays can contain objects and how objects can contain arrays and more. This enables us to create complex object structures,
+  which will be of great use in designing real life applications
+  */
