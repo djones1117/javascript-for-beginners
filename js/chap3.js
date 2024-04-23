@@ -327,4 +327,468 @@ It is actually a function. This function will be executed on every element in th
 
 
 
+/* Do not worry if this is too difficult for now; it will become clear soon enough. We are writing the function in two different ways in the following code snippet:
+They are actually doing the same except that the first one is checking for an element being equal to 6, and the second for an element being equal to 10*/
+
+arr10 = [2, 6, 7, 8];
+let findValue = arr10.find(function(e) { return e === 6});
+let findValue2 = arr10.find(e => e === 10);
+console.log(findValue, findValue2);
+
+/* The log statement will log 6 and undefined because it can find an element that matches for 6, but not one that matches for 10*/
+
+/* A function can take a certain input . in this case it takes the element of the array as input. When the element of the array equals 6 or 10 it returns the element
+In chapter 6 we will cover functions in much more detail. it is alot for a beginner to take in so you can review this a bit later if it is unclear for now
+
+
+
+
+Often you do not only want to find the element, but you want to know what position it is on. This can be done with the indexOf() method. This method returns
+the index on which the value is found. If a value occurs in an array more than once, it will return the first occurance. if the value is not found, it will 
+return -1: */
+
+
+let findIndex = arr10.indexOf(6);
+let findIndex2 = arr10.indexOf(10);
+console.log(findIndex, findIndex2);
+
+
+
+/* So the first one will return 1 since that is the index position of 6 in the array. The second one will return -1 because the array does not contain 10.
+
+
+if you want to find the next occurrence of the specified number, you can add a second argument to indexOf(), specifying from which position it should start searching
+useful if you have numerous values that are the same*/
+
+
+let findIndex3 = arr10.indexOf(6, 2);
+console.log(findIndex3);
+
+//this would log -1 because 6 cannot be found starting from index 2
+
+
+//the last occurrence can also be found. This is done with the lastIndexOf() method.
+
+let animals = ["dog", "horse", "cat", "platypus", "dog"];
+let lastDog = animals.lastIndexOf("dog");
+console.log(lastDog);
+
+//the value of lastDog will be 4 because that is the last occurrence of dog in the array.
+
+
+//Sorting
+/* There is also a built in method for sorting arrays. it sorts numbers from small to high and strings A-Z. you can call sort() on an array and the order
+of the values of the array will change to a sorted order*/
+
+let names = ["James", "Alicia", "Fatiha", "Maria", "Bert"];
+names.sort();
+console.log(names);
+
+
+/* As you can see the array is now sorted alphabetically. For numbers it is sorting them in ascending order, as you can see in the following code snippet 
+*/
+
+let ages = [18, 72, 33, 56, 40];
+ages.sort();
+console.log(ages);
+
+
+
+
+
+//Reversing
+/* The elements of the array can be reversed by calling the built in method, reverse(), on an array. it puts the last element first and the first element last, it does not matter
+whether the array is sorted or not, it just reverses the order*/
+
+names.reverse();
+console.log(names);
+
+
+//prac excercise
+//create an empty array
+//add milk bread and apples
+//update bread with bananas and eggs
+//remove the last item and output it into the console
+//sort the list A_Z
+//find and output the index value of milk
+//after bananas add carrots and lettuce
+//create a new list containing pop and juice
+//combine both lists adding the new list twice to the end of the first list
+//get the last index value of pop and output it to the console
+
+const myList = [];
+myList.push("Milk", "Bread", "Apples");
+myList.splice(1, 1, "Bananas", "Eggs");
+console.log(myList)
+const lastItem = myList.pop();
+console.log(lastItem);
+myList.sort();
+let findIndex4 = myList.indexOf("Milk");
+console.log(findIndex4);
+console.log(myList);
+myList.splice(1, 0, "Carrots", "Lettuce");
+console.log(myList);
+const newList2 = ["Juice", "Pop"];
+newList3 = myList.concat(newList2, newList2)
+console.log(newList3)
+let findIndex5 = newList3.lastIndexOf("Pop");
+console.log(findIndex5);
+
+
+//Multidimensional arrays
+
+/* Earlier we established already that arrays can contain any data type. This means that arrays can also contain other arrays (which in turn can contain 
+    other arrays) This is called multidimensional arrays. it sounds complicated but it is just an array of arrays: a list of lists:
+*/
+
+let someValues1 = [1, 2, 3];
+let someValues2 = [4, 5, 6];
+let someValues3 = [7, 8, 9];
+
+let arrOfArrays = [someValues1, someValues2, someValues3];
+console.log(arrOfArrays);
+
+//so we can create an array of already existing arrays. This is called a two-dimensional array. We can write it like this;
+
+let arrOfArrays2 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+console.log(arrOfArrays2);
+
+
+//if you want to access elements of the inner arrays you will have to specify an index twice. 
+
+let value1 = arrOfArrays[0][1];
+console.log(value1);
+
+
+//the statement will grab the first array because it has an index position of 0. From this first array, it will take the second value because it has an index
+//position of 1. then it will store this value in value1. That means the value of value1 will be 2. can you figure out the next value of the example below
+
+
+let value2 = arrOfArrays[2][2];
+
+//it takes the third array and from this array it takes the third value thus 9 will be logged in the console. and it does not stop here; it can go many levels deep.
+//lets show that by creating an array of our array of our arrays. we are simply going to store this array three times in another array
+
+
+arrOfArraysOfArrays = [arrOfArrays, arrOfArrays, arrOfArrays];
+console.log(arrOfArraysOfArrays);
+
+
+//this is what it will loook like in terms of values
+
+// [
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ],
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ],
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ]
+// ]
+
+
+
+//lets get the middle element of this array which is the value 5, belonging to the 
+
+
+const middleElement = arrOfArraysOfArrays[1][1][1];
+console.log(middleElement);
+
+
+/* The first step is to get the second array of arrays which is index 1, then we need to get the second array of this one which is again 1
+now we reach the level of the values amd we need the second value so we again use 1. this is useful in many situations for example when you want to work
+with matrices */
+
+
+//practice
+//create an array containing 3 values
+//nest the original array into a new array three times
+//output the value 2 from one of the arrarys into  the console
+
+let practiceArray = [1, 2, 3];
+let newArray = [practiceArray, practiceArray, practiceArray];
+let twoValue = newArray[2][1];
+console.log(newArray, twoValue);
+
+
+
+
+
+
+
+/* Objects in javascript
+
+
+
+Now its time to have a look at another complex data structure that can contain more than one value; objects! Objects are very useful and can be used to 
+describe real-life objects as well as more complex abstract concepts that allow for more flexibility in your code.
+
+
+
+Secretly, you have just been introduced to objects already, because arrays are a very special type of object. Arrays are objects with indexed properties.
+All the other objects, and also the objects we will see here, are objects with named properties. This means that instead of an automatically generated 
+index number, we will give it a custom descriptive name.
+
+
+As we can tell from the following code, arrays are defined by javascript as being of the object type
+*/
+
+
+let exArr = [0, 1, 2];
+console.log(typeof exArr);
+
+//the output will be object
+
+//Objects are not too dissimilar to real world objects. They have properties and they can perform actions, methods. Here we will only deal with the properties. We will
+//cover methods in chapter 7 after we have seen functions in 6. An object is a chance to group multiple variables intoo one. This is done with curly brackets
+//{ } . Lets have a look at this object here
+
+
+
+let dog = {
+    dogName: "javascript",
+    weight: 80.0,
+    color: "brown",
+    breed: "golden",
+    age: 9,
+    burglarBitter: true
+};
+
+
+/* We created a variable dog, and we gave this an object as a value. We can recognize that this is an object by seeing the {}. In between the curly braces, we see
+a bunch of properties and their values. */
+
+/* If you have ever wondered whether something should be a property, just try the following template sentence in your head:
+
+*objectname has a(n) *propertyname   */
+
+/* For example, a dog has a name, a dog has a color, and a dog has weight. This is slighly different for the boolean properties, for which you can
+use is or is not instead of has
+
+
+
+We can access the properties of this object in a very similar way as we would with the array. This time, we are not using the index number, but the 
+name of this property to get the value
+*/
+
+
+
+let dogColor1 = dog["color"];
+
+//There is also another way to do this. Instead of using the square brackets, the property name can also be added to the object name with a dot inbetween
+
+let dogColor2 = dog.color;
+
+//This might look familiar. do you remember how we got the length of an array with the length built in property. Yes- the same way. The difference
+//between properties and methods is the lack of parenthesis for properties.
+
+
+
+
+//Updating objects
+
+/* We can change the value of properties of the objects. Again, this is similar to an array because an array is an object as well, but for properties
+we have two options:
+*/
+
+
+
+dog["color"] = "gold";
+dog.weight = 85;
+
+//This has changed the properties of our golden javascript. The color gets updated to to gold and is has gained some weight since the new weight is a couple
+//lbs higher so if we log our dog
+
+console.log(dog);
+
+
+
+//its useful to note that if we change the data type of one of our properties for example
+
+dog["age"] = "nine";
+
+//This is not a problem javascript will just change the whole value and data type to the new situation. 
+
+
+//Another element to note that is that we are now using the liter string values to refer to the objects properties, but we can also work with variables
+//to achieve this for example
+
+
+let variable = "age";
+console.log(dog[variable]);
+
+/*This will still output nine as just changed the value of age to nine. if we change the value of the variable to another dog property, we will be accessing
+another property like this */
+
+variable = "breed"
+console.log(dog[variable]);
+
+//this will print golden. And when we update the value accessing this way it is the exact same as when we would have accessed it with the literal string
+
+dog[variable] = "dachshund";
+console.log(dog["breed"]);
+
+
+//practice excercise
+
+
+let myCar = {
+    make: "kia",
+    model: "model-y",
+    color: "blue",
+    miles:  200,
+    isFast: true
+};
+
+let newVariable = "color";
+
+myCar[newVariable] = "purple";
+console.log(myCar);
+
+newVariable = "forSale";
+
+myCar[newVariable] = true;
+console.log(myCar);
+
+console.log(myCar.model + " " + myCar["make"]);
+
+console.log(myCar.forSale);
+
+
+
+
+
+//Working with objects and arrays
+
+/* When working with objects and arrays, you will see these often combined. In the last section of this chapter, we will deal with combining objects
+and arrays and also objects into objects
+
+
+Objects in objects 
+
+
+lets say we want to have an object for a company. This company will have an address. And an adress is another object. If we give our company an address, we 
+are using a object inside an object:*/
+
+
+
+let company = {
+    activity: "food manafacturing",
+    address : {
+        street: "2nd street",
+        number: "123",
+        zipcode: "33116",
+        city: "Miami",
+        state: "Florida"
+    },
+    yearOfEstablishment: 2021
+};
+
+
+//as you can see, our company has an addressobject with values. This can go very many levels deep if necessary.
+
+//To access or modify one of the properties of the address here, we can use two approaches.
+
+company.address.zipcode = "33117";
+company["address"]["number"] = "100";
+
+
+//as you can see this is very similar to the array. We first need to select the address and then do the same thing to access the property we want to change
+
+
+
+//Arrays in objects 
+
+/* Our company might have a range of activities instead of one. We can simply replace the activity from our previous sample with an array:
+*/
+
+let company2 = { companyName: "Healthy Candy",
+                activities: ["food manufacturing", "improving kids' health", "manufacturing toys"],
+                address: {
+                  street: "2nd street",
+                  number: "123",
+                  zipcode: "33116",
+                  city: "Miami",
+                  state: "Florida"
+                },
+                yearOfEstablishment: 2021 
+              };
+
+
+/* We have now used an array in our company object. You can simply use an array with the square braces after the property. Retrieving the individual 
+values is very similar with square braces after the property. The second value of the activities array can be fethed using this statement:
+*/
+
+let activity = company2.activities.indexOf("improving kids' health");
+let activity2 = company2.activities[1];
+console.log(activity, activity2);
+
+//here we call the object were interested in, company then the relevant array, activities, with reference to the index position of the variable were looking for which is 1
+
+
+
+//Objects in arrays
+
+/* It is very possible that instead of one address our company has a list of addresses. We can accomplish this by creating an array of address objects. in this case
+we will create an array of two
+
+*/
+
+
+let addresses = [{
+    street: "2nd street",
+    number: "123",
+    zipcode: "33116",
+    city: "Miami",
+    state: "Florida"
+  },
+  {
+    street: "1st West avenue",
+    number: "5",
+    zipcode: "75001",
+    city: "Addison",
+    state: "Texas"
+  }];
+
+
+
+  /* So the array can be recognized by the square brackets and the objects by the curly brackets. the street name of the first object can be fetched using this statement
+  
+  */
+
+
+  let streetName = addresses[0].street;
+  console.log(streetName);
+
+
+
+  /* Here we call the array were interested in, addresses, with reference to the index position of the object were looking for within the array 0 and then
+  the required variable from within the object which is street. This may seem complicated but from an array inside an object from the previous section its
+  worth practicing calling variables from nested arrays and objects until youre comfortable with it*/
+
+
+
+  /* Objects in arrays in objects
+  
+  
+  Just to show that this can go as many levels as we would need, we are going to give our company object an array of address objects. so lets add this array of adress objects
+  to our company object. This way our company has an array of adresses.
+  */
+
+  let company3 = { companyName: "Healthy Candy",
+                    activities: ["food manufacturing", "improving kids' health", "manufacturing toys"],
+                    address: [{
+                      street: "2nd street",
+                      number: "123",
+                      zipcode: "33116",
+                      city: "Miami",
+                      state: "Florida"
+                    },
+                    {
+                      street: "1st West avenue",
+                      number: "5",
+                      zipcode: "75001",
+                      city: "Addison",
+                      state: "Texas"
+                    }],
+                    yearOfEstablishment: 2021 
+                  };
+
+
 /* */
