@@ -490,7 +490,38 @@ console.log(arrOfArraysOfArrays);
 const middleElement = arrOfArraysOfArrays[1][1][1];
 console.log(middleElement);
 
+arrOfArraysOfArraysOfArrays = [arrOfArraysOfArrays, arrOfArraysOfArrays, arrOfArraysOfArrays ]
 
+console.log(arrOfArraysOfArraysOfArrays)
+
+const secondSeven = arrOfArraysOfArraysOfArrays[0][1][2][0];
+console.log(secondSeven);
+// [
+
+// [
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ],
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ],
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ]
+// ]
+// [
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ],
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ],
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ]
+// ]
+// [
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ],
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ],
+//     [ [1, 2, 3 ] ], [ 4, 5, 6 ], [ 7, 8, 9] ]
+// ]
+
+//]
+
+
+//the above would be just index 0 of the new array . There would be two more of these same arrays. to target 9 in the third set of index 0 try to follow the code below
+exampleDeep = [arrOfArraysOfArraysOfArrays, arrOfArraysOfArraysOfArrays, arrOfArraysOfArraysOfArrays];
+console.log(exampleDeep)
+const deepNine = exampleDeep[0][2][2][2][2];
+console.log(deepNine)
 /* The first step is to get the second array of arrays which is index 1, then we need to get the second array of this one which is again 1
 now we reach the level of the values amd we need the second value so we again use 1. this is useful in many situations for example when you want to work
 with matrices */

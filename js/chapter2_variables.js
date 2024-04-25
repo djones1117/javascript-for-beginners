@@ -803,7 +803,6 @@ console.log(example > example1 || example3 < example);
 
 let isUser = false;
 console.log(!isUser);
-
 //this will log true since it will simply flip the value of the boolean. You can also negate an expression that valuates to a boolean, but you would
 //have to make sure that the expression gets evaluated first by grouping it. 
 
