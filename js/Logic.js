@@ -481,3 +481,20 @@ if (player === computer) {
   }
 }
 console.log(newGame);
+
+
+
+/* Summary 
+
+Now lets wrap things up. In this chapter, we have covered conditional statements. We started with if else statements. Whenever the condition 
+associated with the if is true, the if block gets executed. If the condition is false and there is an else block present, that will be executed. We have also seen
+ternary operators and the funky syntax they bring to the table. Its a short way of writing if else statements if you only need one statement per block.
+
+
+and lastly we have seen switch statements and how they can be used to optimize our conditional code. With the switch statement, we can compare one condition
+with many different cases. When they are equal (value and data type), the code associated with the case gets executed
+
+in the next chapter we are going to add loops to the mix! This is going to help us write more efficient code and alogorithms*/
+
+
+
