@@ -221,4 +221,76 @@ iteration. here is the flow of a for loop
 
 //this is a simple example that logs the numbers 0 to 10 excluding 10 to the console.
 
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
 
+/* It starts by creating a variable i, and this is set to 0. Then checks whether i is smaller than 10 if it is, it will execute the log statement. After this
+it will execute i++ and increase i by one.
+
+
+//if we dont increase i, we will get stuck in an infinite loop, since the value of i would not change and it would be smaller than 10 forever. This is 
+something to look out for in all loops
+
+
+The condition gets checked again. and this goes on until i reaches a value of 10. 10 is not smaller than 10, so the loop is done executing and the numbers
+0-9 have been logged to the console.
+
+We can use a foor loop to create a sequence and add values to an array like this
+*/
+
+
+let arr = [];
+for (let i = 0; i < 100; i++) {
+    arr.push(i);
+}
+
+console.log(arr);
+
+
+/* Since the loop ran the block of code 100 times starting with an initial value of 0 for i, the block will add incrementing value into an array, at the end of the array
+. This results in an array that has a count of 0-99 and a length of 100. Since arrays start with an index value of 0, the values in the array will actually
+match up with the index values of the items in the array. 
+
+or we could create an array containing only even values;
+
+
+*/
+
+
+let even_arr = [];
+for (let i = 0; i < 100; i += 2) {
+    even_arr.push(i);
+}
+
+console.log(even_arr);
+
+
+
+/* Resulting in the array of even numbers
+
+most commonly, you will see i++ as the third part of the for loop, but please note that you can write any statement there. In this case, we are using
+i = i + 2 to add 2 to the previous value everytime, creating an array with only even numbers
+
+
+
+practice*/
+
+myWork = [];
+for (let x = 1; x < 10; x++) {
+    let stat = x % 2 ? true : false;
+    let temp = {
+        name: `Lesson ${x}`,
+        status: stat
+    }
+    myWork.push(temp);
+}
+
+console.log(myWork);
+
+
+
+/* Nested Loops
+
+
+*/
