@@ -11,7 +11,8 @@ This chapter focuses on multi-value data types like arrays and objects. The code
 
 
 ## Chapter 4
-This chapter focuses on Logic statements. You can find the code in chap4.html and logic.js                          
+This chapter focuses on Logic statements. Switch, Ternary, If else, and else if statements 
+ You can find the code in chap4.html and logic.js                          
 
 
 ## Chapter 5  
