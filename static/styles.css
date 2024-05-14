@@ -1,0 +1,37 @@
+/* Base styles */
+body {
+    font-size: 16px; /* Default font size */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout in portrait */
+}
+
+.sidebar {
+    display: block; /* Sidebar visible in portrait */
+}
+
+img {
+    width: 100%; /* Full width in portrait */
+    height: auto;
+}
+
+/* Styles for landscape orientation */
+@media (orientation: landscape) {
+    body {
+        font-size: 18px; /* Larger font size in landscape */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Two columns in landscape */
+    }
+
+    .sidebar {
+        display: none; /* Hide sidebar in landscape */
+    }
+
+    img {
+        width: 50%; /* Image width reduced in landscape */
+    }
+}
