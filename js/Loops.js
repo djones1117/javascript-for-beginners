@@ -9,7 +9,7 @@ We will discuss the basics of loops, then continue to discuss nesting loops, whi
 complex constructs we have seen, arrays and objects. And finally we will introduce two keywords related to loops, break and continue, to control the flow 
 of the loop even more. 
 
-These are the different loops we will br discusiing in this chapter:
+These are the different loops we will be discusiing in this chapter:
 
 while loop
 
@@ -149,7 +149,7 @@ do {
     // code to be executed if the condition is true
 } while (true);
 
-it executes what is within the do block, ans then after that it evaluates the while. if the condition is true, it will execute what is in the do block again.
+it executes what is within the do block, and then after that it evaluates the while. if the condition is true, it will execute what is in the do block again.
 it will continue to do so until the condition in the while changes to false.
 
 we can use the prompt method to get user input. lets use a do while loop to ask the user for a number between 0 and 100.
@@ -158,10 +158,10 @@ we can use the prompt method to get user input. lets use a do while loop to ask 
 */
 
 
-// let number;
-// do {
-//   number = prompt("Please enter a number between 0 and 100: ");
-// } while (!(number >= 0 && number < 100));
+let number;
+do {
+  number = prompt("Please enter a number between 0 and 100: ");
+} while (!(number >= 0 && number < 100));
 
 
 

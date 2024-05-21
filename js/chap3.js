@@ -31,7 +31,7 @@ arrays very often; for example, when you want to keep track of all user input, o
 
 
 //Creating arrays
-/* You might be convinced by niow that arrays are great, so lets see how we can make them. There is actually a right way and a wrong way to do it.
+/* You might be convinced by now that arrays are great, so lets see how we can make them. There is actually a right way and a wrong way to do it.
 Here are both. Which one do you think is the right one? */
 
 
@@ -489,6 +489,9 @@ console.log(arrOfArraysOfArrays);
 
 const middleElement = arrOfArraysOfArrays[1][1][1];
 console.log(middleElement);
+/* The first step is to get the second array of arrays which is index 1, then we need to get the second array of this one which is again 1
+now we reach the level of the values amd we need the second value so we again use 1. this is useful in many situations for example when you want to work
+with matrices */
 
 arrOfArraysOfArraysOfArrays = [arrOfArraysOfArrays, arrOfArraysOfArrays, arrOfArraysOfArrays ]
 
@@ -522,9 +525,6 @@ exampleDeep = [arrOfArraysOfArraysOfArrays, arrOfArraysOfArraysOfArrays, arrOfAr
 console.log(exampleDeep)
 const deepNine = exampleDeep[0][2][2][2][2];
 console.log(deepNine)
-/* The first step is to get the second array of arrays which is index 1, then we need to get the second array of this one which is again 1
-now we reach the level of the values amd we need the second value so we again use 1. this is useful in many situations for example when you want to work
-with matrices */
 
 
 //practice
@@ -567,7 +567,7 @@ console.log(typeof exArr);
 //the output will be object
 
 //Objects are not too dissimilar to real world objects. They have properties and they can perform actions, methods. Here we will only deal with the properties. We will
-//cover methods in chapter 7 after we have seen functions in 6. An object is a chance to group multiple variables intoo one. This is done with curly brackets
+//cover methods in chapter 7 after we have seen functions in 6. An object is a chance to group multiple variables into one. This is done with curly brackets
 //{ } . Lets have a look at this object here
 
 
@@ -637,7 +637,7 @@ dog["age"] = "nine";
 //This is not a problem javascript will just change the whole value and data type to the new situation. 
 
 
-//Another element to note that is that we are now using the liter string values to refer to the objects properties, but we can also work with variables
+//Another element to note that is that we are now using the literal string values to refer to the objects properties, but we can also work with variables
 //to achieve this for example
 
 
@@ -865,7 +865,7 @@ const friend3 = {
 people.friends.push(friend1, friend2, friend3);
 
 console.log(people)
-
+console.log(people.friends[0].first);
 
 //chapter projects
 

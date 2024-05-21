@@ -76,7 +76,7 @@ if (hobby == "coding") {
   console.log(" Can you teach me that? ");
 }
 
-//it will log i love coding too. the problem here is that the signle equal sign in the if statement is assigning coding to hobby
+//it will log i love coding too. the problem here is that the single equal sign in the if statement is assigning coding to hobby
 //and then it is converting coding to a boolean and since it is not an empty string it will become true so the if block will be executed. always remember to use double equal sign in this case
 
 //practice
