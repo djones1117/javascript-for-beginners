@@ -22,3 +22,6 @@ This chapter focuses on Loops. You can find the code in loops.js and open the li
 ## Chapter 6
 This chapter focuses on Functions. A very important building block of learning javascript. 
 
+
+## Chapter 7 
+Chapter 7 focuses on classes and object oriented programming. 

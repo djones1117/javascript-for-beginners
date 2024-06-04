@@ -216,7 +216,7 @@ console.log(lastElement)
 
  //we can add elements with the push method
  favoriteFruits = ["grapefruit", "orange", "lemon"];
- favoriteFruits.push("tangerine");
+ favoriteFruits.push("tangerine");  
  //the value gets added to the end of the array. the push method returns the new length of the array four in this case. you can store this length in a variable like this
 
  let lengthOfFavoriteFruits = favoriteFruits.push("lime");
