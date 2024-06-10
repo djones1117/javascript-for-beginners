@@ -183,7 +183,7 @@ let terribleThingToDo = undefined;
 
 //Null
 /* In the last example we saw an issue that can be solved with a final primitive type,
-null. Null is a special value for saying that a variable is empty or has am unkown value.
+null. Null is a special value for saying that a variable is empty or has an unkown value.
 This is case sensitive. You should use lowercase for null*/
 
 let empty = null;
@@ -495,7 +495,7 @@ let nr12 = 2;
 console.log(nr12++);
 console.log(nr12);
 
-//The postfix gets executed after sending the variable through, and then acter that the operation gets
+//The postfix gets executed after sending the variable through, and then after that the operation gets
 //executed. In the previous example nr12 gets incremented by 1 after logging. so the first logging
 //statement is still logging the old value because it has not been updated yet
 //it has been updated for the second log statement
