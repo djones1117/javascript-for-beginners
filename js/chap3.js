@@ -26,7 +26,7 @@ working with objects and arrays
 //Arrays and their properties
 
 /* Arrays are lists of values. These values can be of all data types and one array can contain different data types. It is often very useful to store multiple
-values inside on variable for example a list of students, groceries, or test scores. Once you start writing scripts, you'll find yourself needing to write
+values inside one variable for example a list of students, groceries, or test scores. Once you start writing scripts, you'll find yourself needing to write
 arrays very often; for example, when you want to keep track of all user input, or when you want to have a list of options to present to the user.*/
 
 
@@ -490,7 +490,7 @@ console.log(arrOfArraysOfArrays);
 const middleElement = arrOfArraysOfArrays[1][1][1];
 console.log(middleElement);
 /* The first step is to get the second array of arrays which is index 1, then we need to get the second array of this one which is again 1
-now we reach the level of the values amd we need the second value so we again use 1. this is useful in many situations for example when you want to work
+now we reach the level of the values and we need the second value so we again use 1. this is useful in many situations for example when you want to work
 with matrices */
 
 arrOfArraysOfArraysOfArrays = [arrOfArraysOfArrays, arrOfArraysOfArrays, arrOfArraysOfArrays ]
@@ -778,7 +778,7 @@ let addresses = [{
   }];
 
 
-
+console.log(addresses)
   /* So the array can be recognized by the square brackets and the objects by the curly brackets. the street name of the first object can be fetched using this statement
   
   */

@@ -166,7 +166,7 @@ it helps to understand the if else statement first. Remember that we had a unary
 let access = age < 18 ? "denied" : "allowed";
 console.log(access);
 
-//the little code snipper will assign a value to acess. If age is less than 18, then it will assign the value "denied", else it will assign the value "allowed"
+//the little code snippet will assign a value to access. If age is less than 18, then it will assign the value "denied", else it will assign the value "allowed"
 //you can also specify actions in a ternary statement like this
 
 age < 18 ? console.log("denied") : console.log("allowed");
@@ -255,7 +255,7 @@ switch (activity) {
     break;
 }
 
-//if ourn activity is dinner it will output it is 6:30pm
+//if our activity is dinner it will output it is 6:30pm
 
 /* whats up with all these breaks you may be wondering? If you do not use the command break at the end of a case, it will execute the next case as well.
 this will be done from the case where it has a match, until the end of the switch statement or until we encounter a break statement. This is what 
