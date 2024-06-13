@@ -64,7 +64,8 @@ this is the escape character the backslash
 in this example below the backslash can be used to ensure your interpreter doesnt see 
 the single or double quotes marks and end the string too early
 */
-
+let siDoB = `let's learn ${language} do you know "javascript"`;
+console.log(siDoB)
 let str = "Hello, what's your name? Is it \"Mike\"?";
 console.log(str);
 let str2 = 'Hello, what\'s your name? Is it "Mike"?';
