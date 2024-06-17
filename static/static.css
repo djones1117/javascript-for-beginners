@@ -82,3 +82,51 @@ margin-top: 2.5rem;
     justify-content: center;
     align-items: center;
 }
+
+.line-word-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.word {
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.signup-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+}
+
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    
+    justify-content: center;
+}
+
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+}
