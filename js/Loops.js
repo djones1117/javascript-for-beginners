@@ -291,6 +291,17 @@ console.log(myWork);
 
 
 /* Nested Loops
+Sometimes it can be necesssary to use a loop inside a loop. A loop inside a loop is a nested loop. Often it is not the best solution to a problem.
+It could even be a sign of poorly written code but every now and then it is perfectly fine to solve a problem.
 
+Here is what it would look like for while loops:
+
+while (condition 1) {
+    //code that gets executed as long as condition 1 is true
+    //this loop depends on condition 1 being true
+    while (condition 2) {
+        //code that gets exeucted as long as condition 2 is true
+    }
+}
 
 */
