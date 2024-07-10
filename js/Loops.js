@@ -303,5 +303,22 @@ while (condition 1) {
         //code that gets exeucted as long as condition 2 is true
     }
 }
+Nesting can also be used with for loops. or with a combination of both for and while or even with all kinds of loops; they can go several levels deep. 
+
+An example in which we might use nested loops would be when we want to create an array of arrays. With the outer loop we create the top level array and with the 
+inner loop we add the values to the array
 
 */
+
+
+let arrOfArrays = [];
+for (let i = 0; i < 3; i++){
+    arrOfArrays.push([]);
+    for (let j = 0; j < 7; j++) {
+        arrOfArrays[i].push(j);
+    } 
+}
+
+
+//when we log the array like this
+console.log(arrOfArrays);
