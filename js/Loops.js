@@ -322,3 +322,7 @@ for (let i = 0; i < 3; i++){
 
 //when we log the array like this
 console.log(arrOfArrays);
+
+
+//we can see the output is an array of arrays with values from 0 up to 6
+
