@@ -326,3 +326,26 @@ console.log(arrOfArrays);
 
 //we can see the output is an array of arrays with values from 0 up to 6
 
+/* Loops and Arrays
+
+if you are not convinced on how extremely useful loops are by now, have a look at
+loops and arrays. Loops make life with arrays a lot more comfortable. 
+
+We can combine the length property and the condition part of the for loop or while loop to loop over some arrays. it would look like this in case of
+a for loop:
+
+
+let arr = [some array];
+for (initialize variable; variable smaller than arr.length; statement)
+{ code to be executed
+}
+
+lets start with an example that is going to log every value of the array
+
+*/
+
+
+let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+for (let i = 0; i < names.length; i++){
+    console.log(names[i]);
+}
