@@ -349,3 +349,25 @@ let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
 for (let i = 0; i < names.length; i++){
     console.log(names[i]);
 }
+
+
+
+/* We use the length property to determine the max value of our index. The index starts counting at 0, but the length does not.
+The index is always one smaller than the length. Hence we loop over the values of the array by increasing the length. 
+
+In this case we arent doing very interesting things yet, we are simply printing the values. But we could be changing the values of the array in a loop, 
+for example like this:
+
+*/
+
+
+let names2 = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+for (let i = 0; i < names.length; i++){
+    names2[i] = "hello " + names2[i];
+}
+console.log(names2)
+
+
+//we have concatenated hello with the beggining of our names. The array is changed in the loop and the array will have this content after the loop has executed
+
+
