@@ -362,7 +362,7 @@ for example like this:
 
 
 let names2 = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
-for (let i = 0; i < names.length; i++){
+for (let i = 0; i < names2.length; i++){
     names2[i] = "hello " + names2[i];
 }
 console.log(names2)
@@ -370,4 +370,22 @@ console.log(names2)
 
 //we have concatenated hello with the beggining of our names. The array is changed in the loop and the array will have this content after the loop has executed
 
+/* The possibilities are endless here. When an array comes in somewhere in the application, data can be sent to the database per value. Data can be modified by value
+or even filitered like this:
+*/
+
+
+
+
+let names3 = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+for (let i = 0; i < names3.length; i++){
+    if(names3[i].startsWith("M")) {
+        delete names3[i];
+        continue;
+    }
+    names3[i] = "hello " + names3[i];
+}
+console.log(names3);
+
+//The startwith method just checks whether the string starts with a certain character. In this case it checkes where the string starts with the string m.
 
