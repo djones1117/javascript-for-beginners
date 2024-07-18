@@ -389,3 +389,19 @@ console.log(names3);
 
 //The startwith method just checks whether the string starts with a certain character. In this case it checkes where the string starts with the string m.
 
+/*
+You'll have to be careful here though. If we were to remove the item instead of deleting it and leaving an empty value, we would accidentally skip the next value
+since that value gets the next index of the recently deleted one and i is incremented and moves on to the next index
+
+what do you think this one does
+
+
+let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+for (let i = 0; i < names3.length; i++){
+  names.push("...")
+}
+
+
+your program gets stuck in an infinite loop here. Since the value gets added every iteration, the length of the loop grows with every iteration and i will 
+never be bigger than or equal to length.
+*/
