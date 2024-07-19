@@ -326,6 +326,9 @@ console.log(arrOfArrays);
 
 //we can see the output is an array of arrays with values from 0 up to 6
 
+//excercise here tomorrow!!!!
+
+
 /* Loops and Arrays
 
 if you are not convinced on how extremely useful loops are by now, have a look at
@@ -404,4 +407,26 @@ for (let i = 0; i < names3.length; i++){
 
 your program gets stuck in an infinite loop here. Since the value gets added every iteration, the length of the loop grows with every iteration and i will 
 never be bigger than or equal to length.
+*/
+
+
+//prac exercise here tomorrow
+
+
+
+/* for of loop
+
+There is another loop we can use to iterate over the elements of an array: the for of loop. It cannot be used to change the values associated with the index 
+as we can do with the regular loop, but for processing values it is very nice and readable loop
+
+here is what the syntax looks like:
+
+let arr = [some array]
+for (let variableName of arr) {
+    //code to be executed
+    //value of variablename gets updated every iteration
+    //all values of the array will be variableName once
+
+}
+
 */
