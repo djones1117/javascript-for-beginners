@@ -429,4 +429,23 @@ for (let variableName of arr) {
 
 }
 
+
+so you can read  it like this "For every value of the array, call it variableName and do the following "We can log our names array using this loop:
+
+"
+*/
+
+let players = ["Gavi", "Pedri", "yamal", "Lewa", "Gundo"];
+for (let player of players){
+    console.log(player);
+}
+
+
+/* We need to specify a temporary variable; in this case we called it player. This is used to put the value of the current iteration in, and after
+the iteration, it gets replaced with the next value. This code results in the following ouput;
+gavi
+pedri
+yamal
+lewa
+gundo
 */
