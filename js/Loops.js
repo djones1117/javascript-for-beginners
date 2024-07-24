@@ -448,4 +448,28 @@ pedri
 yamal
 lewa
 gundo
+
+
+There are some limitations here; we cannot modify the array, but we could wirte all the elements to a database or a file, or send it somewhere else
+The advantage of this is that we cannpt accidentally get stuck in an infinite loop or skip values. 
+
+//practice here
+
+
+
+
+
+
+
+
+loops and objects
+We have just seen how to loop over the values of an array but we can also loop over the properties of an object. This can be helpful when we
+need to go over all the properties but dont know the exact properties of the object we are iterating over.
+Looping over an object can be done in a few ways. We can use the for in loop to loop over the object directly, or we can convert the object to an array and loop over
+the array. We'll consider both in the following sections. 
+
+
+for in loop
+
+
 */
