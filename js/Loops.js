@@ -471,5 +471,17 @@ the array. We'll consider both in the following sections.
 
 for in loop
 
+Manipulating objects with loops can also be done with another variation of the for loop, the for in loop. The for in loop is somewhat similar to the for of loop. again
+here, we need to specify a temporary name, also referred to as a key, to store each property name in. We can see it in action here
 
 */
+let car = {
+    model: "Golf",
+    make: "Volkswagen",
+    year: 1999,
+    color: "Black",
+};
+
+for (let prop in car) {
+    console.log(car[prop]);
+}
