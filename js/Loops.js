@@ -485,3 +485,27 @@ let car = {
 for (let prop in car) {
     console.log(car[prop]);
 }
+
+//We need to use the prop of each iteration to get the value out of the car object. 
+//The output then becomes:
+
+/*
+Golf
+Volkswagen
+1999
+black
+*/
+
+for (let prop in car) {
+    console.log(prop)
+}
+
+
+//if we just logged the prop like this
+
+/*
+model
+make
+year
+color 
+*/
