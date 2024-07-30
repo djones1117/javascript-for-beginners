@@ -508,4 +508,22 @@ model
 make
 year
 color 
+
+As you can see the name of all the properties get printed, and not the values. This is because the for in loop is getting the property names(keys) and not the values
+The other for in is doing the opposite it is getting the values and not the keys
+
+
+The for in loop can also be used on arrays, but it is not really useful. It will only return the indices since these are the keys of the values of the arrays. 
+Also it should be noted that the order of execution cannot be guaranteed, even though this is usually important for arrays. It is therefore better to use the approaches mentioned 
+in the section on loops and arrays
+
+
+
+
+practice 5.7
+
+
 */
+
+
+
