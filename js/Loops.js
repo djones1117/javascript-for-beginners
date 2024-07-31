@@ -525,5 +525,41 @@ practice 5.7
 
 */
 
+/* 
+Looping over objects by converting to an array
+
+You can use any loop on objects, as soon as you convert the object to an array. This can be done in three ways
+
+convert the keys of the object to an array
+
+convert the values of the object to an array
+convert the key-value entries to an array (containing arrays with two elements: object key and object value)
+
+lets use this example:
+
+
+*/
+
+let whip = {
+    model: "Golf",
+    make: "Volkswagen",
+    year: 1999,
+    color: "Black",
+};
+
+/* if we want to loop over the keys of the object, we can use the for in loop, as we saw in the previous section, but we can also use the for of loop if
+we convert it to an array first. We do so by using the Object.Keys(nameofobject) built in function. This takes an object and grabs all the properties 
+if this object and converts them to an array. 
+
+to demonstrate how this works
+
+*/
+
+
+let arrKeys = Object.keys(whip);
+console.log(arrKeys);
+
+
+//this will output model make year color in an array
 
 
