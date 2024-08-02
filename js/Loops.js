@@ -563,3 +563,23 @@ console.log(arrKeys);
 //this will output model make year color in an array
 
 
+//We can loop over the properties of this array like this using the for of loop:
+
+
+for(let key of Object.keys(whip)) {
+    console.log(key);
+}
+
+
+
+//and this will output model make year color
+
+
+
+/* Similarily we can use the for of loop to loop over the values of the object by 
+converting the values to an array. The main difference here is that we use Object.values(nameofobject):
+*/
+
+for(let value of Object.values(whip)) {
+    console.log(value)
+}
