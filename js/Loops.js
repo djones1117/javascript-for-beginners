@@ -583,3 +583,21 @@ converting the values to an array. The main difference here is that we use Objec
 for(let value of Object.values(whip)) {
     console.log(value)
 }
+
+
+//You can loop over these arrays in the same way you loop over any array. you can use the length and index start like this in a regular for loop:
+
+let arrKeys1 = Object.keys(whip);
+for(let i = 0; i < arrKeys1.length; i++) {
+    console.log(arrKeys1[i] + ": " + whip[arrKeys1[i]]);
+}
+
+
+
+//and this will output the key and value pairs
+
+/* model : golf
+   make  : volkswagen
+   year  : 1999
+   color : black
+   */
