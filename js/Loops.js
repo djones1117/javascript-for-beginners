@@ -600,4 +600,35 @@ for(let i = 0; i < arrKeys1.length; i++) {
    make  : volkswagen
    year  : 1999
    color : black
+   
+   
+   
+   
+   More interesting is how to loop over both arrays at the same time using the for of loop. In order to do so, we will have to use Object.entries() lets demonstrate
+   what it does
+   
    */
+
+
+
+   let arrEntries = Object.entries(whip);
+   console.log(arrEntries);
+
+
+   //this will output 
+   /*
+
+   [
+    ['model', 'golf'],
+    ['make', 'volkswagen'],
+    ['year', '1999'],
+    ['color', 'black']
+   ] 
+
+
+
+as you can see it is returning a two dimensional arrat, containing key-value pairs. We can loop over it like this:
+
+   */
+
+
