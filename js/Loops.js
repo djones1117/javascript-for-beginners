@@ -632,3 +632,29 @@ as you can see it is returning a two dimensional arrat, containing key-value pai
    */
 
 
+for (const [key, value] of Object.entries(whip)) {
+    console.log(key, ":", value);
+}
+
+
+//this will output
+
+
+/*
+model : Golf
+make  : Volkswagen
+year  : 1999
+color : black
+
+
+alright you have seen many ways to loop over objects now. Most of them come down to converting an object to an array. We can imagine that at this point you 
+could use a break or maybe youd just like to continue?
+
+
+
+
+
+Break and continue!!
+
+
+*/
