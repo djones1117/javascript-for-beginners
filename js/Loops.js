@@ -656,5 +656,45 @@ could use a break or maybe youd just like to continue?
 
 Break and continue!!
 
+break and continue are two keywrods that we can use to control the flow of execution of the loop. break will stop the loop and move on to the code below
+the loop. continue will stop the current iteration and move back to the top of the loop,
+checking the condition (or in the case of a for loop, performing the statement and then checking the condition)
+
+we will be using this array of car objects to demonstrate break and continue
+
 
 */
+
+
+
+let cars = [
+    {
+      model: "Golf",
+      make: "Volkswagen",
+      year: 1999,
+      color: "black",
+    },
+    {
+      model: "Picanto",
+      make: "Kia",
+      year: 2020,
+      color: "red",
+    },
+    {
+      model: "Peugeot",
+      make: "208",
+      year: 2021,
+      color: "black",
+    },
+    {
+      model: "Fiat",
+      make: "Punto",
+      year: 2020,
+      color: "black",
+    },
+  ];
+
+
+  //we will first have a look at break
+
+  
