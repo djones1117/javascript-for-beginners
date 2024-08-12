@@ -697,4 +697,25 @@ let cars = [
 
   //we will first have a look at break
 
+  //break 
   
+  
+  /*We have already seen break in the switch statement. When break was executed, the switch statement ended. this is not very different when it comes to loops
+  when the break statement is executed the loop even when the condition is still true
+  
+  here is a silly example to demonstrate how break works: 
+  */
+
+  for (let i = 0; i < 10; i++) {
+    console.log(i)
+    if (i === 4) {
+        break;
+    }
+  }
+
+
+  /* it looks like a loop that will log the numbers 0 to 10 excluding 10 to the console. There is a catch here though as soon as i = 4, we execute the break
+  command. break ends the loop immediately, so no more loop code gets executed afterward.
+  
+  we can also use break to stop looping through the array of cars when we have found a car that matches our demands
+  */
