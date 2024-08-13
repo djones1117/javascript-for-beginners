@@ -719,3 +719,13 @@ let cars = [
   
   we can also use break to stop looping through the array of cars when we have found a car that matches our demands
   */
+
+
+  for (let i = 0; i < cars.length; i++) {
+    if (cars[i].year >= 2020) {
+        if (cars[i].color === "black") {
+            console.log("I have found my new car: ", cars[i]);
+            break;
+        }
+    }
+  }
