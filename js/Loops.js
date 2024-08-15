@@ -729,3 +729,31 @@ let cars = [
         }
     }
   }
+
+
+
+  //as soon as we run into  a car with the year 2020 or later and the car is black, we will stop looking for other cars
+  /* and just buy that one. The last car in the array would have also been an option but we did not consider it because we found one already 
+  the code snippet will output this
+  
+  
+  I have found my new car: {model: 'Peugeot', make: '208', year: 2021,
+color: 'black' }
+
+However often it is not a best practice to use break. if you can manage to work with the condition of the loop to break out of the loop instead, this is a much 
+better practice. it prevents you getting stuck in an infinite loop and the code is easier to read
+
+if the condition of the loop is not an actual condition but pretty much a run forever kind of statement the code gets hard to read
+
+
+  */
+
+let superLongArray = [];
+while (true) {
+    if (superLongArray[0] != 42 && superLongArray.length > 0) {
+      superLongArray.shift();
+    } else {
+      console.log("Found 42!");
+      break;
+    }
+  }
