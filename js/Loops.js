@@ -757,3 +757,31 @@ while (true) {
       break;
     }
   }
+  ///add another example here tomorrow
+
+
+
+  //continue 
+
+
+  /* break can be used to quit the loop, and continue can be used to move on to the next iteration of the loop. It quits the current iteration and moves back up
+  to check the condition and start a new iteration
+  
+  
+  here is an example
+  */
+
+
+
+for (let car of cars) {
+    if (car.color !== "black") {
+      continue;
+    }
+    if (car.year >= 2020) {
+      console.log("sure, let's get this one:", car);
+    }
+  }
+
+
+// This loop skips over any car that is not black and only considers black cars made in 2020 or later.
+
