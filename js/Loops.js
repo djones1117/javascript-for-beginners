@@ -328,7 +328,7 @@ console.log(arrOfArrays);
 
 //excercise here tomorrow!!!!
 
-
+//
 /* Loops and Arrays
 
 if you are not convinced on how extremely useful loops are by now, have a look at
@@ -411,7 +411,7 @@ never be bigger than or equal to length.
 
 
 //prac exercise here tomorrow
-
+//
 
 
 /* for of loop
@@ -455,7 +455,7 @@ The advantage of this is that we cannpt accidentally get stuck in an infinite lo
 
 //practice here
 
-
+//
 
 
 
@@ -759,7 +759,7 @@ while (true) {
   }
   ///add another example here tomorrow
 
-
+//
 
   //continue 
 
