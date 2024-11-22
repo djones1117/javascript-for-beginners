@@ -115,6 +115,7 @@ margin-top: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .button-container {
@@ -129,4 +130,23 @@ margin-top: 2.5rem;
     align-items: center;
     justify-content: center;
     width: 250px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a17a69;
+    width: 300px;
+    display: none;
+    
+}
+
+.menu.show {
+    display: block;
+}
+
+
+.skills {
+    margin: auto;
 }
