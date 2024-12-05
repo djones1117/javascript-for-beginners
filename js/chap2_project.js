@@ -38,3 +38,4 @@ let total = 16;
 let total2 = 500 + 100 / 5 + total--;
 console.log(total2)
 
+// add project here - make commit so you can see this message
