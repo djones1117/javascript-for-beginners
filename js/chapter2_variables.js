@@ -688,14 +688,14 @@ console.log(notEqual != notEqual1);
 console.log(notEqual !== notEqual1)
 
 
-//this will conclue that since both variables have different data type they are not the same
+//this will conclude that since both variables have different data types they are not the same
 //and will log true to the console
 
 notEqual1 = Number(notEqual1)
 console.log(notEqual !== notEqual1)
 
 //this will return false because both variables have the same value and same data type
-//so not equal will conlucde they are equal so it will log false
+//so not equal will conclude they are equal so it will log false
 
 
 //Greater than and smaller than 
