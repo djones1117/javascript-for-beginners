@@ -31,6 +31,10 @@ let pounds = 205;
 let height = inches * 2.54;
 let weight = pounds / 2.2046;
 console.log(height, weight)
+let heightInM = height / 100;
+console.log(heightInM);
+let bmi2 = weight/(heightInM ** 2);
+console.log(bmi2);
 let bmi = weight/(height/100*height/100);
 console.log(bmi)
 

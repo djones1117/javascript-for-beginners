@@ -184,7 +184,7 @@ let terribleThingToDo = undefined;
 
 //Null
 /* In the last example we saw an issue that can be solved with a final primitive type,
-null. Null is a special value for saying that a variable is empty or has an unkown value.
+null. Null is a special value for saying that a variable is empty or has an unknown value.
 This is case sensitive. You should use lowercase for null*/
 
 let empty = null;
