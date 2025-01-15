@@ -38,7 +38,7 @@ Here are both. Which one do you think is the right one? */
 arr1 = new Array("purple", "green", "yellow");
 arr2 = ["black", "orange", "pink"];
 
-//If you guessed the section option using square brackets, you are right. This is the best and most readable way to create a new array. On the other hand, the first
+//If you guessed the second option using square brackets, you are right. This is the best and most readable way to create a new array. On the other hand, the first
 //option can do unexpected things. Look at both lines of code here. What do you think they will do.
 
 arr3 = new Array(10);
@@ -68,6 +68,7 @@ console.log(typeof arr[2]);
 //cannot change the array itself. Here is a piece of code to demonstrate:
 
 const arr5 = ["hi there"];
+console.log(arr5);
 arr5[0] = "new value";
 console.log(arr5[0]);
 console.log(arr5);
