@@ -255,6 +255,23 @@ switch (activity) {
     break;
 }
 
+
+let favoriteSport = "soccer";
+
+switch (favoriteSport) {
+  case "Football":
+    console.log("football is the best");
+    break;
+  case "soccer":
+    console.log("soccer is the best");
+    break;
+  case "basketball":
+    console.log("basketball is the best");
+    break;
+  case "baseball":
+    console.log("baseball is the best")
+    break;
+}
 //if our activity is dinner it will output it is 6:30pm
 
 /* whats up with all these breaks you may be wondering? If you do not use the command break at the end of a case, it will execute the next case as well.
