@@ -281,7 +281,7 @@ console.log( "empty string", strToNr, typeof strToNr);
 
 
 //as you can see an empty string and null will both result in the number 0. This is a choice
-//that the makers of javascript made, which you will have to know -it can come in handy
+//that the makers of javascript made, which you will have to know it can come in handy
 //at times when you want to convert a string to 0 when it is empty or null.
 
 
