@@ -280,7 +280,7 @@ strToNr = Number(strToNr);
 console.log( "empty string", strToNr, typeof strToNr);
 
 
-//as you can see an empty string and null will both result in the number 0. This is a choice
+//as you can see an empty string and null will both result in the number 0 A false boolean will also be 0 if converted. True boolean will be 1. This is a choice
 //that the makers of javascript made, which you will have to know it can come in handy
 //at times when you want to convert a string to 0 when it is empty or null.
 
@@ -294,7 +294,7 @@ console.log(strToNr2, typeof strToNr2);
 
 
 //here we can see that anything that cant be interpreted as a number by simply 
-//removing the quotes will evaluate as Nan (not a number).
+//removing the quotes will evaluate as Nan (not a number) Undefined will also be Nan if converted to a num.
 
 
 
