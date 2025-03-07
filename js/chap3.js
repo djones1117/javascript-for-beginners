@@ -417,6 +417,16 @@ console.log(names);
 //combine both lists adding the new list twice to the end of the first list
 //get the last index value of pop and output it to the console
 
+/*new challenge here 
+*/
+
+
+
+
+
+
+
+
 const myList = [];
 myList.push("Milk", "Bread", "Apples");
 myList.splice(1, 1, "Bananas", "Eggs");
