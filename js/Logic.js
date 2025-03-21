@@ -284,7 +284,7 @@ it is 12pm it is 5pm it is 6:30 pm.
 one last side note. switch uses strict type checking (the triple equals strategy) to determine equality, which checks for both a value and a data type*/
 
 /* The default case
-There is one part of switch that we have not worked with yet and that is a special case label, namely, default. This works a lok like the else part 
+There is one part of switch that we have not worked with yet and that is a special case label, namely, default. This works a lot  like the else part 
 of an if else statement. If it does not find a match with any of the cases and a default case is present, then it will execute the code associated
 with the default case. Here is the template of a switch statement with a default cause
 

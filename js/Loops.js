@@ -172,7 +172,7 @@ with 34 the condition in the while block is true but negates to false ending the
 
 */
 
-//practice
+//practice 5.2
 
 
 let counter = 0;
@@ -274,7 +274,7 @@ i = i + 2 to add 2 to the previous value everytime, creating an array with only 
 
 
 
-practice*/
+practice 5.3 */
 
 myWork = [];
 for (let x = 1; x < 10; x++) {
@@ -326,7 +326,7 @@ console.log(arrOfArrays);
 
 //we can see the output is an array of arrays with values from 0 up to 6
 
-//excercise here tomorrow!!!!
+// practice 5.4
 
 //
 /* Loops and Arrays
@@ -410,7 +410,7 @@ never be bigger than or equal to length.
 */
 
 
-//prac exercise here tomorrow
+//prac 5.5
 //
 
 
@@ -453,7 +453,7 @@ gundo
 There are some limitations here; we cannot modify the array, but we could wirte all the elements to a database or a file, or send it somewhere else
 The advantage of this is that we cannpt accidentally get stuck in an infinite loop or skip values. 
 
-//practice here
+//practice 5.6
 
 //
 
@@ -526,6 +526,9 @@ practice 5.7
 */
 
 /* 
+
+
+
 Looping over objects by converting to an array
 
 You can use any loop on objects, as soon as you convert the object to an array. This can be done in three ways
