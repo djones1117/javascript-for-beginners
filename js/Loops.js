@@ -409,7 +409,7 @@ your program gets stuck in an infinite loop here. Since the value gets added eve
 never be bigger than or equal to length.
 */
 
-
+//add word problem to each practice example
 //prac 5.5
 //
 
