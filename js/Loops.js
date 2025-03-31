@@ -46,7 +46,7 @@ while (i < 10) {
     i++;
 }
 
-//the output will be 1 -10 excluding 9.
+//the output will be 1 -9 excluding 10.
 
 //These steps are
 //1 create a variable i and set its value to 0
