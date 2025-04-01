@@ -319,6 +319,17 @@ for (let i = 0; i < 3; i++){
     } 
 }
 
+//you can also write it like this
+
+let arrOfArrays3 = [];
+for (let i = 0; i < 3; i++){
+  const tempArray = [];
+for (let v = 0; v < 7; v++){
+  tempArray.push(v);
+}
+arrOfArrays3.push(tempArray);
+}
+
 
 //when we log the array like this
 console.log(arrOfArrays);
@@ -326,8 +337,27 @@ console.log(arrOfArrays);
 
 //we can see the output is an array of arrays with values from 0 up to 6
 
-// practice 5.4
+/* We use the nested loops to create an array in an array, meaning we can work with rows and columns after having created this loop. this means nested loops
+can be used to create tabular data. We can show this output as a table using the console table method instead like so*/
 
+console.table(arrOfArrays);
+
+// practice 5.4
+const myTable = [];
+const rows = 3;
+const columns = 7;
+let counter1 = 0;
+for (let y = 0; y < rows; y++){
+  const tempTable = [];
+for (let x = 0; x < columns; x++){
+  counter1++;
+  tempTable.push(counter1);
+
+}
+myTable.push(tempTable);
+}
+console.log(myTable);
+console.table(myTable);
 //
 /* Loops and Arrays
 
@@ -409,9 +439,9 @@ your program gets stuck in an infinite loop here. Since the value gets added eve
 never be bigger than or equal to length.
 */
 
-//add word problem to each practice example
+
 //prac 5.5
-//
+
 
 
 /* for of loop
