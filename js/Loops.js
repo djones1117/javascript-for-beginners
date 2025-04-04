@@ -441,6 +441,8 @@ never be bigger than or equal to length.
 
 
 //prac 5.5
+const gridArray = [];
+const cells = 64;
 
 
 
